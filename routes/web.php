@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'head\header@title');
 Route::get('/lol', function () {
     return 'lol man';
 });
