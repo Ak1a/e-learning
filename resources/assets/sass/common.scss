@@ -1,0 +1,57 @@
+body {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  background: $body-bg;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+
+  .block-student,
+  .block-teacher {
+    text-align: center;
+    font-size: 80px;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    .text-student,
+    .text-teacher {
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .block-student:hover,
+  .block-teacher:hover {
+    background: $green;
+    transition: all 0.3s ease;
+    font-size: 100px;
+
+    .text-student,
+    .text-teacher {
+      transition: all 0.3s ease;
+      font-size: 22px;
+    }
+  }
+
+  .vertical-line {
+    width: 5px;
+    background: black;
+    height: 45%;
+    border-radius: 10px;
+  }
+}

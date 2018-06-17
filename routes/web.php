@@ -12,6 +12,11 @@
 */
 
 Route::get('/', 'head\header@title');
-Route::get('/lol', function () {
-    return 'lol man';
+
+Route::get('/teacher', function () {
+    return 'lol teacher';
+});
+
+Route::get('/student', function () {
+    return 'lol student';
 });
